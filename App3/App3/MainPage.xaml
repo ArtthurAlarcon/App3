@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Práctica 3!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="3 Entries e imprimirlos" FontSize="Title" Padding="10,10,10,10"/>
+
+        <Label Text="Nombre(s):" FontSize="Medium" Padding="10,10,10,0"/>
+        <Entry Text="{Binding Nombre}" Margin="10,0,10,10"/>
+        <Label Text="Apellido Paterno:" FontSize="Medium" Padding="10,10,10,0"/>
+        <Entry Text="{Binding Apellido1}" Margin="10,0,10,10"/>
+        <Label Text="Apellido Materno:" FontSize="Medium" Padding="10,10,10,0"/>
+        <Entry Text="{Binding Apellido2}" Margin="10,0,10,10"/>
+
+        <Label Text="{Binding NombreCompleto}" Margin="10,10,10,10"/>
+    </StackLayout>
+
+</ContentPage>
